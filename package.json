@@ -18,7 +18,7 @@
   },
   "scripts": {
     "dev": "ts-node-dev --exit-child src/server.ts",
-    "test": "jest"
+    "test": "jest --detectOpenHandles"
   },
   "dependencies": {
     "@prisma/client": "^3.8.1",
