@@ -13,6 +13,12 @@ class UserController {
 
         res.status(200).json(result)
     }
+
+    async findAll(req: Request, res: Response): Promise<void>{
+        const userService = new UserService()
+        const result = await userService.findAll()
+        res.status(200).json(result)
+    }
 }
 
 

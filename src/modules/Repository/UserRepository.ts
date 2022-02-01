@@ -12,6 +12,10 @@ class UserRepository{
         return user
     }
 
+    async findAll(){
+        const users = await prismaClient.user.findMany()
+        return users
+    }
 
 
 
